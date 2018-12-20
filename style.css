@@ -1,0 +1,120 @@
+/* ********** Custom Properties ********** */
+:root {
+  --main-font: 'Raleway';
+  --alternate-font: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+
+  --main-color: #0096D9;
+  --main-modal-color: rgba(0, 150, 217, .75);
+  --second-color: #171226;
+  --second-modal-color: rgba(23, 18, 38, .75);
+
+  --bg-color: #FFF;
+  --bg-modal-color: rgba(0, 0, 0, .5);
+  --bg-alternate-color: #F3F3F3;
+  --border-color: #DDD;
+
+  --text-color: #333;
+  --title-color: var(--second-color);
+
+  --link-color: var(--main-color);
+  --link-hover-color: var(--second-color);
+
+  --max-width: 1200px;
+  --header-height: 5rem;
+
+  --logo-width: 4rem;
+  --logo-height: 4rem;
+  --logo-spacing: .5rem;
+
+  --nav-height: 64px;
+}
+
+/* ********** Reset Styles ********** */
+html {
+  font-family: var(--main-font), var(--alternate-font);
+  font-size: var(--font-size);
+  line-height:  var(--line-height);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all .3s ease-out;
+}
+
+a:hover { color: var(--link-hover-color); }
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+/* ********** Bootstrap Styles ********** */
+.bg-dark {
+  background-color: var(--second-color) !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: all .3s ease;
+}
+
+.navbar-dark .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 150, 217, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item:hover {
+  background-color: var(--main-modal-color);
+  transition: all .3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--main-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { color: var(--bg-color); }
+
+.navbar-brand img {
+  width: auto;
+  height: var(--logo-height);
+}
+
+/* ********** My Styles ********** */
+
+/* ********** Media Queries Small ********** */
+@media (min-width: 576px) {
+
+}
+
+/* ********** Media Queries Medium ********** */
+@media (min-width: 768px) {
+
+}
+
+/* ********** Media Queries Large ********** */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+/* ********** Media Queries ExtraLarge ********** */
+@media (min-width: 1200px) {
+
+}
