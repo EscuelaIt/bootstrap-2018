@@ -95,7 +95,73 @@ a:hover { color: var(--link-hover-color); }
   height: var(--logo-height);
 }
 
+.form-control {
+  border-color: var(--second-color);
+}
+
+.form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 .2rem var(--main-modal-color);
+}
+
+.form-group label {
+  color: var(--main-color);
+}
+
+.form-group .btn {
+  font-weight: bold;
+}
+
 /* ********** My Styles ********** */
+.Footer { background-color: var(--bg-alternate-color); }
+
+.u-flowText { font-size: 1.25rem; }
+
+.HeroImage {
+  width: 100%;
+  min-height: 100vh;
+  background-image: var(--bg-url);
+  background-attachment: var(--bg-attach);
+  background-size: var(--bg-size);
+  background-position-x: var(--bg-x);
+  background-position-y: var(--bg-y);
+}
+
+.HeroImage > div {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-modal-color);
+}
+
+.HeroImage h2 {
+  padding: 0 1rem;
+  text-align: centeR;
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 5vw;
+  color: var(--bg-color);
+}
+
+.HeroImage span { display: block; }
+
+.Sentence {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3vw;
+}
+
+.Sentence blockquote {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Sentence cite { font-size: 2vw; }
+
+.HeroBio p { font-size: 1.25rem; }
 
 /* ********** Media Queries Small ********** */
 @media (min-width: 576px) {
@@ -104,7 +170,7 @@ a:hover { color: var(--link-hover-color); }
 
 /* ********** Media Queries Medium ********** */
 @media (min-width: 768px) {
-
+  .u-flowText { font-size: 1.5rem; }
 }
 
 /* ********** Media Queries Large ********** */
@@ -112,6 +178,8 @@ a:hover { color: var(--link-hover-color); }
   .nav-item:hover {
     background-color: transparent;
   }
+
+  .u-flowText { font-size: 1.75rem; }
 }
 
 /* ********** Media Queries ExtraLarge ********** */
