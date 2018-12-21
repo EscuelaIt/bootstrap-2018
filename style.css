@@ -163,6 +163,24 @@ a:hover { color: var(--link-hover-color); }
 
 .HeroBio p { font-size: 1.25rem; }
 
+.MarathonHistory [class|="col"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MarathonHistory img {
+  flex: auto;
+  object-fit: cover;
+}
+
+.MarathonsLogos .col-4 {
+  background-color: var(--bg-color);
+  transition: all .3s ease-out;
+}
+
+.MarathonsLogos .col-4:hover { filter: invert(1); }
+
 /* ********** Media Queries Small ********** */
 @media (min-width: 576px) {
 
